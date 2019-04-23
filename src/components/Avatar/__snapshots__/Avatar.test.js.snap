@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar> Matches the snapshot 1`] = `
+.c0 {
+  border-radius: 50%;
+}
+
+<img
+  className="c0"
+  src="url"
+/>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paper> Matches the snapshot 1`] = `
+.c0 {
+  background-color: #ffffff;
+  padding: 16px 25px;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(194,194,194,0.5);
+}
+
+<div
+  className="c0"
+>
+  children
+</div>
+`;
