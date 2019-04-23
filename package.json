@@ -1,0 +1,20 @@
+{
+  "name": "charity-donations",
+  "version": "1.0.0",
+  "description": "application to display the latest donations for a charity using React and any suitable libraries.",
+  "main": "index.js",
+  "repository": "https://github.com/Piblo/recruitment-test-donations.git",
+  "author": "Pablo Guerrero <pablo.orozco@kpmg.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "webpack": "^4.30.0"
+  }
+}
