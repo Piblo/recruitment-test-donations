@@ -6,15 +6,25 @@
   "repository": "https://github.com/Piblo/recruitment-test-donations.git",
   "author": "Pablo Guerrero <pablo.orozco@kpmg.co.uk>",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
+  },
   "dependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^2.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
-    "webpack": "^4.30.0"
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
   }
 }
