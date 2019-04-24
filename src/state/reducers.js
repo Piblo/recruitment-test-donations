@@ -4,5 +4,5 @@ import donationsReducer from './reducers/donationsReducer';
 
 export default combineReducers({
   charity: charityReducer,
-  donation: donationsReducer
+  donations: donationsReducer
 });

@@ -40,5 +40,5 @@ describe('donationsReducer', () => {
 
 const defaultState = {
   loading: false,
-  data: null
+  data: []
 };

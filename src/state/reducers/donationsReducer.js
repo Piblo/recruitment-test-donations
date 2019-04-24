@@ -20,5 +20,5 @@ export default function donationsReducer(state = defaultState, action) {
 
 const defaultState = {
   loading: false,
-  data: null
+  data: []
 };

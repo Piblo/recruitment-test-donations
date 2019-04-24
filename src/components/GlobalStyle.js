@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
     text-rendering: geometricPrecision;
+    background-color: ${props => props.theme.palette.background};
   }
 `;
 

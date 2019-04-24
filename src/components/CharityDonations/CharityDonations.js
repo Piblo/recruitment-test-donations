@@ -2,10 +2,11 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { CharityDetails, DonationCard } from '..';
 
-const CharityDonations = ({ charity, donations, getCharity }) => {
+const CharityDonations = ({ charity, donations, getCharity, getDonations }) => {
   useEffect(() => {
     const charityId = 183092;
     getCharity(charityId);
+    getDonations(charityId);
   }, []);
 
   return (
@@ -33,7 +34,8 @@ export default CharityDonations;
 CharityDonations.propTypes = {
   charity: PropTypes.object,
   donations: PropTypes.array,
-  getCharity: PropTypes.func
+  getCharity: PropTypes.func,
+  getDonations: PropTypes.func
 };
 
 CharityDonations.defaultProps = {

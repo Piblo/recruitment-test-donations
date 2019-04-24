@@ -10,7 +10,7 @@ describe('CharityDonations', () => {
     expect(charityDetails.length).toEqual(1);
     expect(charityDetails.prop('name')).toBe(charity.name);
     expect(charityDetails.prop('description')).toBe(charity.description);
-    expect(charityDetails.prop('logoAbsoluteUrl')).toBe(charity.logoUrl);
+    expect(charityDetails.prop('logoUrl')).toBe(charity.logoAbsoluteUrl);
     expect(charityDetails.prop('websiteUrl')).toBe(charity.websiteUrl);
   });
 
