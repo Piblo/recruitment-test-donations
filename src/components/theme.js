@@ -1,8 +1,8 @@
 export default {
   palette: {
-    primary: '#ac29b5',
-    background: '#f5f5f5',
-    text: '#333333',
-    textLight: '#888888'
+    primary: '#E887ED',
+    background: '#25283D',
+    text: '#ECF0F1',
+    textLight: '#AAAAAA'
   }
 };

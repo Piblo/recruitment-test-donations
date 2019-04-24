@@ -48,6 +48,7 @@ CharityDonations.defaultProps = {
 const PageContainer = styled.div`
   margin: auto;
   max-width: 880px;
+  padding-top: 60px;
 `;
 
 const CardsContainer = styled.div`

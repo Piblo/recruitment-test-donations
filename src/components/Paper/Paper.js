@@ -15,8 +15,8 @@ Paper.propTypes = {
 
 
 const Container = styled.div`
-  background-color: #ffffff;
+  background-color: #4C4F60;
   padding: 16px 25px;
   position: relative;
-  box-shadow: 0 2px 4px 0 rgba(194, 194, 194, 0.5);
+  border-radius: 4px;
 `;

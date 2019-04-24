@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.palette.background};
     color: ${props => props.theme.palette.text};
   }
+
+  a {
+    color: ${props => props.theme.palette.primary};
+  }
 `;
 
 export default GlobalStyle;
