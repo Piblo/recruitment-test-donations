@@ -12,7 +12,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "BABEL_ENV=test jest --config config/jest.config.json",
-    "test-windows": "SET BABEL_ENV=test && jest --config config/jest.config.json"
+    "test-windows": "SET BABEL_ENV=test&&jest --config config/jest.config.json"
   },
   "dependencies": {
     "d3": "^5.9.2",
