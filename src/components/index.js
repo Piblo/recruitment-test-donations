@@ -5,3 +5,5 @@ export { default as Item } from './Layout/Item';
 export { default as Paper } from './Paper/Paper';
 export { default as GlobalStyle } from './GlobalStyle';
 export { default as theme } from './theme';
+export { default as CharityDetails } from './CharityDetails/CharityDetails';
+export { default as CharityDonations } from './CharityDonations/CharityDonations';
