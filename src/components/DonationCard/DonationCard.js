@@ -43,8 +43,11 @@ const StyledAvatar = styled(Avatar)`
 const DonorName = styled.h2`
   margin-top: 0;
   font-weight: normal;
+  margin-bottom: 8px;
 `;
 
 const Amount = styled.span`
   align-self: center;
+  color: ${props => props.theme.palette.primary};
+  font-size: 2em;
 `;

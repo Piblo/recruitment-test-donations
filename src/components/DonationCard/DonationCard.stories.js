@@ -7,7 +7,7 @@ storiesOf('DonationCard', module)
     <DonationCard
       donorName="Michael Gibson"
       avatarUrl="https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif"
-      amount="10"
+      amount={10}
       message="Every little counts!"
       date={new Date()}
       currencyCode="GBP"

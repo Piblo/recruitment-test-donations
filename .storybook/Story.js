@@ -1,11 +1,14 @@
 import React from 'react';
-import GlobalStyle from '../src/components/GlobalStyle';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle, theme } from '../src/components';
 
 const Story = ({ children }) => (
-  <React.Fragment>
-    <GlobalStyle />
-    {children}
-  </React.Fragment>
+  <ThemeProvider theme={theme}>
+    <React.Fragment>
+      <GlobalStyle />
+      {children}
+    </React.Fragment>
+  </ThemeProvider>
 );
 
 export default Story;
