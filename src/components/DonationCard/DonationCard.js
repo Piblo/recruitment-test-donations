@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { formatDate } from '../../utils/formatting';
+import { formatDate, getCurrencySymbol } from '../../utils/formatting';
 import Paper from '../Paper/Paper';
 import Avatar from '../Avatar/Avatar';
 import Container from '../Layout/Container';
 import Item from '../Layout/Item';
 
-const DonationCard = ({ donorName, amount, date, message, avatarUrl }) => (
+const DonationCard = ({ donorName, amount, date, message, avatarUrl, currencyCode }) => (
   <Paper>
     <Container direction="row">
       <StyledAvatar src={avatarUrl} />
@@ -17,7 +17,7 @@ const DonationCard = ({ donorName, amount, date, message, avatarUrl }) => (
             <DonorName>{donorName}</DonorName>
             <div>{formatDate(date)}</div>
           </Item>
-          <Amount>{amount}</Amount>
+          <Amount>{getCurrencySymbol(currencyCode) + amount}</Amount>
         </Container>
         <p>{message}</p>
       </Item>
@@ -32,7 +32,8 @@ DonationCard.propTypes = {
   amount: PropTypes.number,
   date: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   message: PropTypes.string,
-  avatarUrl: PropTypes.string
+  avatarUrl: PropTypes.string,
+  currencyCode: PropTypes.string
 };
 
 const StyledAvatar = styled(Avatar)`

@@ -7,3 +7,16 @@ export function formatDate(date) {
 
   return timeFormat('%d/%m/%Y')(d);
 }
+
+export function getCurrencySymbol(currencyCode) {
+  if (!currencyCode) {
+    return null;
+  }
+
+  const currencyMapping = {
+    GBP: '£',
+    EUR: '€'
+  };
+
+  return currencyMapping[currencyCode];
+}

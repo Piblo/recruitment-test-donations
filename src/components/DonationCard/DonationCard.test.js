@@ -21,8 +21,9 @@ describe('<DonationCard>', () => {
 
   it('Displays donation amount', () => {
     const amount = 10;
-    const component = shallow(<DonationCard amount={amount} />);
-    expect(component.contains(amount)).toBeTruthy();
+    const currencyCode = 'GBP';
+    const component = shallow(<DonationCard amount={amount} currencyCode={currencyCode} />);
+    expect(component.contains(`£${amount}`)).toBeTruthy();
   });
 
   it('Displays donation date', () => {
