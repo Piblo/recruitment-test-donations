@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { CharityDetails, DonationCard } from '..';
+import { CharityDetails } from '..';
+import DonationsTimeline from '../DonationsTimeline/DonationsTimeline';
 
 const CharityDonations = ({ charity, donations, getCharity, getDonations }) => {
   useEffect(() => {
@@ -15,19 +16,7 @@ const CharityDonations = ({ charity, donations, getCharity, getDonations }) => {
       {charity && <CharityDetails name={charity.name} description={charity.description} logoUrl={charity.logoAbsoluteUrl} websiteUrl={charity.websiteUrl} />}
       <h3>Latest donations</h3>
       {!donations.length && <p>No donations have been made yet.</p>}
-      <CardsContainer>
-        {donations.map((donation, index) =>
-          <DonationCard
-            key={index}
-            donorName={donation.donorDisplayName}
-            amount={donation.amount}
-            avatarUrl={donation.imageUrl}
-            currencyCode={donation.currencyCode}
-            date={donation.donationDate}
-            message={donation.message}
-          />
-        )}
-      </CardsContainer>
+      {donations.length > 0 && <DonationsTimeline donations={donations} />}
     </PageContainer>
   );
 };
@@ -49,11 +38,4 @@ const PageContainer = styled.div`
   margin: auto;
   max-width: 880px;
   padding-top: 60px;
-`;
-
-const CardsContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
 `;

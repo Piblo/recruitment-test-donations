@@ -8,6 +8,7 @@ const Container = styled.div`
   flex: ${props => props.grow};
   justify-content: ${props => props.justifyContent};
   flex-basis: ${props => props.direction === 'column' ? 'auto' : 'unset'};
+  position: relative;
 `;
 
 export default Container;
