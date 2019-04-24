@@ -3,6 +3,7 @@
 exports[`<Avatar> Matches the snapshot 1`] = `
 .c0 {
   border-radius: 50%;
+  height: 100%;
 }
 
 <img
