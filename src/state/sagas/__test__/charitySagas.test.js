@@ -28,7 +28,9 @@ describe('charitySagas', () => {
     it('Puts a success action after a successful call', () => {
       const response = {};
       const expectedYield = put(charityActions.fetchCharitySuccess(response));
+
       const actualYield = generator.next(response).value;
+
       expect(actualYield).toEqual(expectedYield);
     });
   });

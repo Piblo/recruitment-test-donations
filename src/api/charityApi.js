@@ -2,6 +2,11 @@ function fetchCharity(charityId) {
 
 }
 
+function fetchCharityDonations(charityId) {
+
+}
+
 export default {
-  fetchCharity
+  fetchCharity,
+  fetchCharityDonations
 };
