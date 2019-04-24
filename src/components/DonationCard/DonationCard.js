@@ -4,15 +4,15 @@ import styled from 'styled-components';
 import { formatDate, getCurrencySymbol } from '../../utils/formatting';
 import { Paper, Avatar, Container, Item } from '..';
 
-const DonationCard = ({ donorName, amount, date, message, avatarUrl, currencyCode }) => (
-  <Paper>
+const DonationCard = ({ donorName, amount, date, message, avatarUrl, currencyCode, className }) => (
+  <Paper className={className}>
     <Container direction="row">
       <StyledAvatar src={avatarUrl} />
       <Item grow={1}>
         <Container direction="row">
           <Item>
             <DonorName>{donorName}</DonorName>
-            <div>{formatDate(date)}</div>
+            <DonationDate>{formatDate(date)}</DonationDate>
           </Item>
           <Amount>{getCurrencySymbol(currencyCode) + amount}</Amount>
         </Container>
@@ -30,7 +30,8 @@ DonationCard.propTypes = {
   date: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   message: PropTypes.string,
   avatarUrl: PropTypes.string,
-  currencyCode: PropTypes.string
+  currencyCode: PropTypes.string,
+  className: PropTypes.string
 };
 
 const StyledAvatar = styled(Avatar)`
@@ -44,7 +45,10 @@ const DonorName = styled.h2`
 `;
 
 const Amount = styled.span`
-  align-self: center;
   color: ${props => props.theme.palette.primary};
   font-size: 2em;
+`;
+
+const DonationDate = styled.div`
+  color: ${props => props.theme.palette.textLight};
 `;

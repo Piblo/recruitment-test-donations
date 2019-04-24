@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Paper = ({ children }) => (
-  <Container>{children}</Container>
+const Paper = ({ children, className }) => (
+  <Container className={className}>{children}</Container>
 );
 
 export default Paper;
 
 Paper.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  className: PropTypes.string
 };
 
 

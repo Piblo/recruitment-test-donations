@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
 	  -moz-osx-font-smoothing: grayscale;
     text-rendering: geometricPrecision;
     background-color: ${props => props.theme.palette.background};
+    color: ${props => props.theme.palette.text};
   }
 `;
 
