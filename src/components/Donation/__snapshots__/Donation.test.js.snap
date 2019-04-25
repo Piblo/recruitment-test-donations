@@ -2,31 +2,33 @@
 
 exports[`<Donation> Matches snapshot 1`] = `
 <div
-  className="Container-sc-13tjqbm-0 YUqoT"
+  className="Container-sc-13tjqbm-0 StyledContainer-sc-12yhrow-0 bitGVB"
   direction="column"
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
 >
   <img
     className="Avatar-sc-1o0a796-0 fZQRzI"
     src="https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif"
   />
   <p
-    className="DonorName-sc-12yhrow-0 fqXucU"
+    className="DonorName-sc-12yhrow-1 gXLUOY"
   >
     Michael Gibson
   </p>
   <span
-    className="Amount-sc-12yhrow-1 gUenbC"
+    className="Amount-sc-12yhrow-2 jFAgTE"
   >
     £10
   </span>
   <div
-    className="VerticalLine-sc-12yhrow-3 jqUVmi"
+    className="VerticalLine-sc-12yhrow-4 ellmqY"
   />
   <div
-    className="EventCircle-sc-12yhrow-4 lkFTky"
+    className="EventCircle-sc-12yhrow-5 eSQixU"
   />
   <div
-    className="DonationDate-sc-12yhrow-2 gVSbIp"
+    className="DonationDate-sc-12yhrow-3 efGwlT"
   >
     23/04/2019
   </div>

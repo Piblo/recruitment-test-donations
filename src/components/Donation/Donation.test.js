@@ -33,6 +33,27 @@ describe('<Donation>', () => {
     expect(component.contains('23/04/2019')).toBeTruthy();
   });
 
+  it('Displays message when the component is hovered', () => {
+    const message = 'Every little counts!';
+    const component = shallow(<Donation message={message} />);
+    component.simulate('mouseOver');
+    expect(component.contains(message)).toBeTruthy();
+  });
+
+  it('Doesn\'t display message when the component is not hovered', () => {
+    const message = 'Every little counts!';
+    const component = shallow(<Donation message={message} />);
+    expect(component.contains(message)).toBeFalsy();
+  });
+
+  it('Hides the message on mouse leave', () => {
+    const message = 'Every little counts!';
+    const component = shallow(<Donation message={message} />);
+    component.simulate('mouseOver');
+    component.simulate('mouseLeave');
+    expect(component.contains(message)).toBeFalsy();
+  });
+
   it('Matches snapshot', () => {
     const tree = renderWithTheme(
       <Donation

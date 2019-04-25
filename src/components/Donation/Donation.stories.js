@@ -10,5 +10,6 @@ storiesOf('Donation', module)
       currencyCode="GBP"
       date={new Date('2019-04-23')}
       amount={10}
+      message="Every little counts!"
     />
   ));
