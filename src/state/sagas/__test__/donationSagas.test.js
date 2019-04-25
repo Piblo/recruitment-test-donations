@@ -1,13 +1,13 @@
 import { all, takeLatest, call, put } from 'redux-saga/effects';
 import donationSagas, { fetchDonations } from '../donationSagas';
-import * as donationActions from '../../actions/donationActions';
+import * as donationsActions from '../../actions/donationsActions';
 import { charityApi } from '../../../api';
 
 describe('donationSagas', () => {
   it('Watches the expected action types', () => {
     const generator = donationSagas();
     const expectedYield = all([
-      takeLatest(donationActions.DONATIONS_FETCH, fetchDonations)
+      takeLatest(donationsActions.DONATIONS_FETCH, fetchDonations)
     ]);
 
     const actualYield = generator.next().value;
@@ -27,7 +27,7 @@ describe('donationSagas', () => {
 
     it('Puts the success action after a successful call', () => {
       const response = {};
-      const expectedYield = put(donationActions.fetchDonationsSuccess(response));
+      const expectedYield = put(donationsActions.fetchDonationsSuccess(response));
 
       const actualYield = generator.next(response).value;
 

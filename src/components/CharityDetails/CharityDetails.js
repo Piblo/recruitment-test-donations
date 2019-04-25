@@ -30,7 +30,7 @@ const CharityName = styled.h1`
 
 const ImageContainer = styled.div`
   border-radius: 50%;
-  background-color: #ECF0F1;
+  background-color: ${props => props.theme.palette.secondary};
   height: 200px;
   width: 200px;
   padding: 20px;

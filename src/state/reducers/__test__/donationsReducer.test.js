@@ -1,5 +1,5 @@
 import donationsReducer from '../donationsReducer';
-import * as donationActions from '../../actions/donationActions';
+import * as donationsActions from '../../actions/donationsActions';
 
 describe('donationsReducer', () => {
   it('Sets the expected default state', () => {
@@ -8,7 +8,7 @@ describe('donationsReducer', () => {
   });
 
   it('Sets the expected state for a donations fetch action', () => {
-    const action = { type: donationActions.DONATIONS_FETCH };
+    const action = { type: donationsActions.DONATIONS_FETCH };
     const expectedState = {
       ...defaultState,
       loading: true
@@ -20,7 +20,7 @@ describe('donationsReducer', () => {
   });
 
   it('Sets the expected state for a successful fetch action', () => {
-    const action = { type: donationActions.DONATIONS_FETCH_SUCCESS, payload: {}};
+    const action = { type: donationsActions.DONATIONS_FETCH_SUCCESS, payload: {}};
     const currentState = {
       ...defaultState,
       loading: true,

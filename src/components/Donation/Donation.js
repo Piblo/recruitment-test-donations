@@ -61,7 +61,7 @@ const DonationDate = styled.div`
 `;
 
 const VerticalLine = styled.div`
-  border-left: 1px dashed #ECF0F1;
+  border-left: 1px dashed ${props => props.theme.palette.secondary};
   height: 40px;
 `;
 

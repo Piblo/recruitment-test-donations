@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { CharityDonations } from '../components';
-import { fetchDonations } from '../state/actions/donationActions';
+import { fetchDonations } from '../state/actions/donationsActions';
 import { fetchCharity } from '../state/actions/charityActions';
 
 const mapStateToProps = state => ({

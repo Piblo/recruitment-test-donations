@@ -1,14 +1,14 @@
 import { all, takeLatest, call, put } from 'redux-saga/effects';
-import * as donationActions from '../actions/donationActions';
+import * as donationsActions from '../actions/donationsActions';
 import { charityApi } from '../../api';
 
 export default function* donationSagas() {
   yield all([
-    takeLatest(donationActions.DONATIONS_FETCH, fetchDonations)
+    takeLatest(donationsActions.DONATIONS_FETCH, fetchDonations)
   ]);
 }
 
 export function* fetchDonations(action) {
   const response = yield call(charityApi.fetchCharityDonations, action.payload.charityId);
-  yield put(donationActions.fetchDonationsSuccess(response));
+  yield put(donationsActions.fetchDonationsSuccess(response));
 }

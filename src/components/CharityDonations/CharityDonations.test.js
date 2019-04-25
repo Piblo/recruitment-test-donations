@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { CharityDonations, CharityDetails, DonationCard, LoadingIndicator } from '..';
+import { CharityDonations, CharityDetails, LoadingIndicator } from '..';
 import DonationsTimeline from '../DonationsTimeline/DonationsTimeline';
 
 describe('CharityDonations', () => {

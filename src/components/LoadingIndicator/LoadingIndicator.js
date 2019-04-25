@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-const loader10g = keyframes`
+const leftDot = keyframes`
 	0% {background-color: rgba(255, 255, 255, .2); }
 	25% { background-color: rgba(255, 255, 255, 1); }
 	50% { background-color: rgba(255, 255, 255, .2); }
@@ -8,7 +8,7 @@ const loader10g = keyframes`
 	100% { background-color: rgba(255, 255, 255, .2); }
 `;
 
-const loader10m = keyframes`
+const middleDot = keyframes`
 	0%{background-color: rgba(255, 255, 255, .2);}
 	25%{background-color: rgba(255, 255, 255, .2);}
 	50%{background-color: rgba(255, 255, 255, 1);}
@@ -16,7 +16,7 @@ const loader10m = keyframes`
 	100%{background-color: rgba(255, 255, 255, .2);}
 `;
 
-const loader10d = keyframes`
+const rightDot = keyframes`
 	0%{background-color: rgba(255, 255, 255, .2);}
 	25%{background-color: rgba(255, 255, 255, .2);}
 	50%{background-color: rgba(255, 255, 255, .2);}
@@ -31,7 +31,7 @@ const LoadingIndicator = styled.div`
 	top: 50%;
 	left: 50%;
 	border-radius: 12px;
-	animation: ${loader10m} 3s ease-in-out infinite;
+	animation: ${middleDot} 3s ease-in-out infinite;
 
   &:before {
     content: "";
@@ -41,7 +41,7 @@ const LoadingIndicator = styled.div`
     height: 12px;
     width: 12px;
     border-radius: 12px;
-    animation: ${loader10g} 3s ease-in-out infinite;
+    animation: ${leftDot} 3s ease-in-out infinite;
   }
 
   &:after {
@@ -52,7 +52,7 @@ const LoadingIndicator = styled.div`
     height: 10px;
     width: 10px;
     border-radius: 10px;
-    animation: ${loader10d} 3s ease-in-out infinite;
+    animation: ${rightDot} 3s ease-in-out infinite;
   }
 `;
 

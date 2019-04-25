@@ -40,7 +40,7 @@ CharityDonations.defaultProps = {
 
 const PageContainer = styled.div`
   margin: auto;
-  max-width: 880px;
+  max-width: ${props => props.theme.pageWidth};
   padding-top: 60px;
 `;
 

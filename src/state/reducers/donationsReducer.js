@@ -1,13 +1,13 @@
-import * as donationActions from '../actions/donationActions';
+import * as donationsActions from '../actions/donationsActions';
 
 export default function donationsReducer(state = defaultState, action) {
   switch (action.type) {
-    case donationActions.DONATIONS_FETCH:
+    case donationsActions.DONATIONS_FETCH:
       return {
         ...state,
         loading: true
       };
-    case donationActions.DONATIONS_FETCH_SUCCESS:
+    case donationsActions.DONATIONS_FETCH_SUCCESS:
       return {
         ...state,
         loading: false,

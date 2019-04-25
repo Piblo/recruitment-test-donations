@@ -1,4 +1,4 @@
-import { formatDate, getCurrencySymbol } from './formatting';
+import { formatDate, getCurrencySymbol } from '../formatting';
 
 describe('formatDate', () => {
   it('Returns a date in the correct format', () => {

@@ -1,11 +1,11 @@
-import * as donationActions from '../donationActions.js';
+import * as donationsActions from '../donationsActions.js';
 
-describe('donationActions', () => {
+describe('donationsActions', () => {
   it('Creates an action to fetch the donations of a charity', () => {
     const charityId = 1;
     const expectedAction = { type: 'donations/fetch', payload: { charityId } };
 
-    const actualAction = donationActions.fetchDonations(charityId);
+    const actualAction = donationsActions.fetchDonations(charityId);
 
     expect(actualAction).toEqual(expectedAction);
   });
@@ -14,7 +14,7 @@ describe('donationActions', () => {
     const donations = [];
     const expectedAction = { type: 'donations/fetch_success', payload: donations };
 
-    const actualAction = donationActions.fetchDonationsSuccess(donations);
+    const actualAction = donationsActions.fetchDonationsSuccess(donations);
 
     expect(actualAction).toEqual(expectedAction);
   });
