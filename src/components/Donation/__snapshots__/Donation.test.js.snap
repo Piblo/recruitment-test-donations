@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Donation> Matches snapshot 1`] = `
+<div
+  className="Container-sc-13tjqbm-0 YUqoT"
+  direction="column"
+>
+  <img
+    className="Avatar-sc-1o0a796-0 fZQRzI"
+    src="https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif"
+  />
+  <p
+    className="DonorName-sc-12yhrow-0 fqXucU"
+  >
+    Michael Gibson
+  </p>
+  <span
+    className="Amount-sc-12yhrow-1 gUenbC"
+  >
+    £10
+  </span>
+  <div
+    className="VerticalLine-sc-12yhrow-3 jqUVmi"
+  />
+  <div
+    className="EventCircle-sc-12yhrow-4 lkFTky"
+  />
+  <div
+    className="DonationDate-sc-12yhrow-2 gVSbIp"
+  >
+    23/04/2019
+  </div>
+</div>
+`;

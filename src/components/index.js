@@ -1,5 +1,4 @@
 export { default as Avatar } from './Avatar/Avatar';
-export { default as DonationCard } from './DonationCard/DonationCard';
 export { default as Container } from './Layout/Container';
 export { default as Item } from './Layout/Item';
 export { default as Paper } from './Paper/Paper';
@@ -8,3 +7,6 @@ export { default as theme } from './theme';
 export { default as CharityDetails } from './CharityDetails/CharityDetails';
 export { default as CharityDonations } from './CharityDonations/CharityDonations';
 export { default as App } from './App';
+export { default as DonationsTimeline } from './DonationsTimeline/DonationsTimeline';
+export { default as LoadingIndicator } from './LoadingIndicator/LoadingIndicator';
+export { default as Donation } from './Donation/Donation';

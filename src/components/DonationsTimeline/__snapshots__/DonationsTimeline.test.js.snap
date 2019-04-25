@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DonationsTimeline> Matches snapshot 1`] = `
+Array [
+  .c2 {
+  border-radius: 50%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: unset;
+  -ms-flex: unset;
+  flex: unset;
+  -webkit-box-pack: unset;
+  -webkit-justify-content: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
+  -webkit-flex-basis: unset;
+  -ms-flex-preferred-size: unset;
+  flex-basis: unset;
+  position: relative;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: unset;
+  -webkit-justify-content: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  position: relative;
+}
+
+.c3 {
+  margin-bottom: 6px;
+}
+
+.c4 {
+  color: #E887ED;
+  font-size: 1.3em;
+  margin-bottom: 6px;
+}
+
+.c7 {
+  color: #AAAAAA;
+  position: absolute;
+  bottom: -32px;
+  font-size: 0.8em;
+}
+
+.c5 {
+  border-left: 1px dashed #ECF0F1;
+  height: 40px;
+}
+
+.c6 {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background-color: #E887ED;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+<div
+    className="c0"
+    direction="row"
+  >
+    <div
+      className="c1"
+      direction="column"
+    >
+      <img
+        className="c2"
+        src="https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif"
+      />
+      <p
+        className="c3"
+      >
+        Anthony (Tony) Rudd
+      </p>
+      <span
+        className="c4"
+      >
+        £3
+      </span>
+      <div
+        className="c5"
+      />
+      <div
+        className="c6"
+      />
+      <div
+        className="c7"
+      >
+        03/01/2019
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="column"
+    >
+      <img
+        className="c2"
+        src="https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif"
+      />
+      <p
+        className="c3"
+      >
+        Michael Gibson
+      </p>
+      <span
+        className="c4"
+      >
+        £10.5
+      </span>
+      <div
+        className="c5"
+      />
+      <div
+        className="c6"
+      />
+      <div
+        className="c7"
+      >
+        01/01/2019
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="column"
+    >
+      <img
+        className="c2"
+        src="https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif"
+      />
+      <p
+        className="c3"
+      >
+        Anthony (Tony) Rudd
+      </p>
+      <span
+        className="c4"
+      >
+        £3
+      </span>
+      <div
+        className="c5"
+      />
+      <div
+        className="c6"
+      />
+      <div
+        className="c7"
+      >
+        02/01/2019
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  background-color: #E887ED;
+  height: 3px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+<div
+    className="c0"
+  />,
+]
+`;

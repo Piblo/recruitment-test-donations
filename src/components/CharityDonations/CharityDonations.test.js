@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { CharityDonations, CharityDetails, DonationCard } from '..';
+import { CharityDonations, CharityDetails, DonationCard, LoadingIndicator } from '..';
+import DonationsTimeline from '../DonationsTimeline/DonationsTimeline';
 
 describe('CharityDonations', () => {
   it('Displays the charity details', () => {
@@ -24,18 +25,26 @@ describe('CharityDonations', () => {
     expect(component.contains('No donations have been made yet.')).toBeTruthy();
   });
 
-  it('Displays donations list', () => {
+  it('Displays donations timeline', () => {
     const component = shallow(<CharityDonations charity={charity} donations={donations} />);
+    const timeline = component.find(DonationsTimeline);
 
-    donations.forEach((donation, index) => {
-      const card = component.find(DonationCard).at(index);
-      expect(card.prop('donorName')).toBe(donation.donorDisplayName);
-      expect(card.prop('amount')).toBe(donation.amount);
-      expect(card.prop('avatarUrl')).toBe(donation.imageUrl);
-      expect(card.prop('currencyCode')).toBe(donation.currencyCode);
-      expect(card.prop('date')).toBe(donation.donationDate);
-      expect(card.prop('message')).toBe(donation.message);
-    });
+    const expectedDonations = donations.map(x => ({
+      amount: x.amount,
+      currencyCode: x.currencyCode,
+      date: x.donationDate,
+      donorName: x.donorDisplayName,
+      avatarUrl: x.imageUrl,
+      message: x.message
+    }));
+
+    expect(timeline.prop('donations')).toEqual(expectedDonations);
+  });
+
+  it('Displays loading indicator while data is being fetched', () => {
+    const component = shallow(<CharityDonations loading={true} />);
+    const loadingIndicator = component.find(LoadingIndicator);
+    expect(loadingIndicator.length).toBeTruthy();
   });
 });
 
