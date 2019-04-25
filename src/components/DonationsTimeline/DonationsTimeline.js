@@ -6,7 +6,7 @@ import { Container, Donation } from '..';
 const DonationsTimeline = ({ donations }) => (
   <React.Fragment>
     <Container direction="row" alignItems="center">
-      {donations.sort((a, b) => a.donationDate - b.donationDate).map((donation, index) =>
+      {donations.sort((a, b) => a.date - b.date).map((donation, index) =>
         <Donation
           key={index}
           amount={donation.amount}

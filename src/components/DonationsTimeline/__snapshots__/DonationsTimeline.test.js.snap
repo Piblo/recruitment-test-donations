@@ -106,38 +106,6 @@ Array [
       <p
         className="c3"
       >
-        Anthony (Tony) Rudd
-      </p>
-      <span
-        className="c4"
-      >
-        £3
-      </span>
-      <div
-        className="c5"
-      />
-      <div
-        className="c6"
-      />
-      <div
-        className="c7"
-      >
-        03/01/2019
-      </div>
-    </div>
-    <div
-      className="c1"
-      direction="column"
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-    >
-      <img
-        className="c2"
-        src="https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif"
-      />
-      <p
-        className="c3"
-      >
         Michael Gibson
       </p>
       <span
@@ -187,6 +155,38 @@ Array [
         className="c7"
       >
         02/01/2019
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="column"
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+    >
+      <img
+        className="c2"
+        src="https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif"
+      />
+      <p
+        className="c3"
+      >
+        Anthony (Tony) Rudd
+      </p>
+      <span
+        className="c4"
+      >
+        £3
+      </span>
+      <div
+        className="c5"
+      />
+      <div
+        className="c6"
+      />
+      <div
+        className="c7"
+      >
+        03/01/2019
       </div>
     </div>
   </div>,

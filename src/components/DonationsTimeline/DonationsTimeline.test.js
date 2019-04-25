@@ -8,7 +8,7 @@ import { renderWithTheme } from '../../utils/testing';
 describe('<DonationsTimeline>', () => {
   it('Displays donation events', () => {
     const component = shallow(<DonationsTimeline donations={donations} />);
-    const sortedDonations = donations.sort((a, b) => a.donationDate - b.donationDate);
+    const sortedDonations = donations.sort((a, b) => a.date - b.date);
 
     sortedDonations.forEach((donation, index) => {
       const donationComponent = component.find(Donation).at(index);
