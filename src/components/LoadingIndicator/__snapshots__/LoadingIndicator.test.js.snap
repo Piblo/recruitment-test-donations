@@ -1,7 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LoadingIndicator> Matches snapshot 1`] = `
+.c0 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  border-radius: 12px;
+  -webkit-animation: gSGtRm 3s ease-in-out infinite;
+  animation: gSGtRm 3s ease-in-out infinite;
+}
+
+.c0:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -25px;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  -webkit-animation: hFsLpk 3s ease-in-out infinite;
+  animation: hFsLpk 3s ease-in-out infinite;
+}
+
+.c0:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  -webkit-animation: jNvCtX 3s ease-in-out infinite;
+  animation: jNvCtX 3s ease-in-out infinite;
+}
+
 <div
-  className="LoadingIndicator-sc-1cg5c9w-0 JjQyC"
+  className="c0"
 />
 `;
