@@ -7,7 +7,7 @@ import { formatDate, getCurrencySymbol } from '../../utils/formatting';
 const DonationsTimeline = ({ donations }) => (
   <React.Fragment>
     <Container direction="row" alignItems="center">
-      {donations.map((donation, index) =>
+      {donations.sort((a, b) => a.donationDate - b.donationDate).map((donation, index) =>
         <Container key={index} alignItems="center" grow={1}>
           <Avatar src={donation.imageUrl} />
           <DonorName>{donation.donorDisplayName}</DonorName>
@@ -69,14 +69,14 @@ const EventCircle = styled.div`
   transform: translateY(50%);
 `;
 
-const MessageContainer = styled.div`
-  width: 100%;
-`;
+// const MessageContainer = styled.div`
+//   width: 100%;
+// `;
 
-const Message = styled.p`
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  color: ${props => props.theme.palette.textLight};
-  font-size: 0.8em;
-`;
+// const Message = styled.p`
+//   overflow: hidden;
+//   white-space: nowrap;
+//   text-overflow: ellipsis;
+//   color: ${props => props.theme.palette.textLight};
+//   font-size: 0.8em;
+// `;
