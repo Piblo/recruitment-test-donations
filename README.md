@@ -1,44 +1,28 @@
 # Recruitment Test - Charity Donations
 An unattended front end recruitment test for JustGiving.
 
-## The Challenge
-Create an application to display the latest donations for a charity using [React](https://facebook.github.io/react) and any suitable libraries.
+## Pre-requisites
+This project has been built using yarn 1.13.0 but it also works on node v10.4.1 and npm 6.1.0
 
-### Requirements
-A good solution will
-* be production ready
-* work on evergreen browsers
-* have good test coverage
-* have an elegant user experience and design
-* use _appropriate_ front end tooling
+## Project Scripts
+### Running the project
+For the first time run, dependencies need to be installed by running ``yarn install`` or ``npm install``
 
-Please put your solution on a repository hosting service such as [GitHub](https://github.com) or [Bitbucket](https://bitbucket.org) (it is always nice to see a clean commit history). Finally, don't forget the README file for your solution.
+Once dependencies have been installed, the project can be run by using the ``yarn start`` or ``npm start`` command
 
-### Concessions
-If you are applying for a junior position, we would encourage you to use the [create react app](https://github.com/facebookincubator/create-react-app) project. The production readiness is less important here, we will help you with that when you get hired.
+### Other scripts
+* Running Storybook: ``yarn storybook`` or ``npm run storybook``
+* Running unit tests: ``yarn test`` or ``npm run test``. These work on a unix environment. For windows, use the ``yarn test-windows`` or ``npm run test-windows`` commands. This is needed in order to set the BABEL_ENV variable correctly
+* Build for production: ``yarn build`` or ``npm run build``
+* Build the storybook app: ``yarn build-storybook`` or ``npm run build-storybook``
 
-#### Use of frameworks
-
-Consider the point of the test, it is to get an understanding of your knowledge of the language, libraries and tooling. If you feel you need to use a fully-fledged framework such as [create react app](https://github.com/facebookincubator/create-react-app) or [next.js](https://github.com/zeit/next.js) we cannot determine your understanding of the underlying tooling.
-
-### Getting Started
-1. Create an account on [JustGiving Developer](https://developer.justgiving.com/) to obtain an `appId`.
-
-2. Choose a `charityId` from one of the charities below.
-
-	| Charity                                                                       | ID     |
-	|-------------------------------------------------------------------------------|--------|
-	| [British Heart Foundation](https://www.justgiving.com/britishheartfoundation) | 183092 |
-	| [Macmillan Cancer Support](https://www.justgiving.com/macmillan)              | 2116   |
-	| [Cancer Research UK](https://www.justgiving.com/cancerresearchuk)             | 2357   |
-	| [Oxfam](https://www.justgiving.com/oxfam)                                     | 13441  |
-	| [National Trust](https://www.justgiving.com/nationaltrust)                    | 183560 |
-	| [Save the Children](https://www.justgiving.com/savethechildren)               | 18570  |
-
-3. Substitute the `appId` and `charityId` in the [curl](https://curl.haxx.se/docs/manual.html) commands below. You should be able to use these commands to retrieve information about your charity.
-```
-curl -H "Content-Type: application/json" https://api.justgiving.com/{appId}/v1/charity/{charityId}
-```
-```
-curl -H "Content-Type: application/json" https://api.justgiving.com/{appId}/v1/charity/{charityId}/donations
-```
+## Project improvements / extensions
+* Change folder structure to group files by domain instead of type
+* Add service worker
+* Explore pre-rendering options
+* Include routing library
+* Add animations and transitions
+* Add bundle analyzer tool
+* Use code splitting 
+* Improve test coverage for react hooks (useEffect)
+* More extensive use of UI theme
