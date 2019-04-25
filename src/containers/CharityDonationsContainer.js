@@ -5,7 +5,8 @@ import { fetchCharity } from '../state/actions/charityActions';
 
 const mapStateToProps = state => ({
   charity: state.charity.data,
-  donations: state.donations.data
+  donations: state.donations.data,
+  loading: state.charity.loading || state.donations.loading
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -46,6 +46,12 @@ describe('CharityDonations', () => {
     const loadingIndicator = component.find(LoadingIndicator);
     expect(loadingIndicator.length).toBeTruthy();
   });
+
+  it('Doesn\'t display a loading indicator while data is not being fetched', () => {
+    const component = shallow(<CharityDonations loading={false} />);
+    const loadingIndicator = component.find(LoadingIndicator);
+    expect(loadingIndicator.length).toBeFalsy();
+  });
 });
 
 const charity = {

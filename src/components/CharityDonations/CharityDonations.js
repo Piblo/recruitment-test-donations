@@ -3,18 +3,21 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { CharityDetails, DonationsTimeline, LoadingIndicator } from '..';
 
-const CharityDonations = ({ charity, donations, getCharity, getDonations }) => {
+const CharityDonations = ({ charity, donations, getCharity, getDonations, loading }) => {
   useEffect(() => {
     const charityId = 183092;
     getCharity(charityId);
     getDonations(charityId);
   }, []);
 
+  if (loading) {
+    return <LoadingIndicator />;
+  }
+
   return (
     <PageContainer>
       {charity && <CharityDetails name={charity.name} description={charity.description} logoUrl={charity.logoAbsoluteUrl} websiteUrl={charity.websiteUrl} />}
       <h3>Latest donations</h3>
-      <LoadingIndicator />
       {!donations.length && <p>No donations have been made yet.</p>}
       {donations.length > 0 && <DonationsTimeline donations={mapDonations(donations)} />}
     </PageContainer>
@@ -27,7 +30,8 @@ CharityDonations.propTypes = {
   charity: PropTypes.object,
   donations: PropTypes.array,
   getCharity: PropTypes.func,
-  getDonations: PropTypes.func
+  getDonations: PropTypes.func,
+  loading: PropTypes.bool
 };
 
 CharityDonations.defaultProps = {

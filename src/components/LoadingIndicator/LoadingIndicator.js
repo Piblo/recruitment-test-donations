@@ -25,11 +25,11 @@ const loader10d = keyframes`
 `;
 
 const LoadingIndicator = styled.div`
-	position: relative;
+	position: absolute;
 	width: 12px;
 	height: 12px;
-	top: 46%;
-	left: 46%;
+	top: 50%;
+	left: 50%;
 	border-radius: 12px;
 	animation: ${loader10m} 3s ease-in-out infinite;
 
